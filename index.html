@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A dummy personal portfolio built for testing GitHub and Cloudflare deployment.">
+  <meta name="theme-color" content="#F6F4ED">
+  <title>John Doe — Dummy Personal Site</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23F6F4ED'/%3E%3Ccircle cx='39' cy='25' r='15' fill='%23ffe500'/%3E%3Crect x='10' y='31' width='35' height='18' rx='6' transform='rotate(-12 10 31)' fill='%230e63ff'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&amp;f[]=gambetta@400,401,500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script defer src="/src/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to dummy content</a>
+
+  <header class="site-header" aria-label="Site header">
+    <div class="header__inner">
+      <a class="brand" href="#top" aria-label="John Doe, back to top">
+        <span class="brand__full">JOHN DOE</span>
+        <span class="brand__short">JD</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#notes">Notes</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="about" data-tone="oklch(0.965 0.015 95)" aria-labelledby="hero-title">
+      <div class="shell">
+        <div class="shape-field" aria-hidden="true">
+          <span class="shape shape--rectangle"></span>
+          <span class="shape shape--circle"></span>
+          <span class="shape shape--half-circle"></span>
+          <span class="shape shape--stick"></span>
+          <span class="shape shape--square"></span>
+        </div>
+
+        <p class="status"><span class="status__dot" aria-hidden="true"></span>AVAILABLE FOR DUMMY WORK</p>
+        <h1 id="hero-title">Lorem ipsum <em>dolor sit amet</em>, consectetur <span>adipiscing elit.</span></h1>
+        <p class="hero__intro">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        <a class="text-link text-link--primary" href="#work">View dummy work <span aria-hidden="true">↘</span></a>
+      </div>
+    </section>
+
+    <section class="section" id="experience" data-tone="oklch(0.915 0.015 170)" aria-labelledby="experience-title">
+      <div class="shell">
+        <p class="section-label">Lorem / Experience</p>
+        <h2 id="experience-title">Duis aute irure dolor in reprehenderit.</h2>
+        <p class="section-intro">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <div class="experience-list">
+          <article class="experience-item">
+            <div class="experience-item__meta">
+              <span class="date-badge">2023 — NOW</span>
+            </div>
+            <div class="experience-item__content">
+              <h3>Lorem Studio</h3>
+              <p class="role">Senior Dummy Designer</p>
+              <p>Ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+            </div>
+          </article>
+          <article class="experience-item">
+            <div class="experience-item__meta">
+              <span class="date-badge">2020 — 2023</span>
+            </div>
+            <div class="experience-item__content">
+              <h3>Ipsum Collective</h3>
+              <p class="role">Dummy Product Engineer</p>
+              <p>Eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+            </div>
+          </article>
+          <article class="experience-item">
+            <div class="experience-item__meta">
+              <span class="date-badge">2018 — 2020</span>
+            </div>
+            <div class="experience-item__content">
+              <h3>Dolor &amp; Co.</h3>
+              <p class="role">Junior Lorem Associate</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work" data-tone="oklch(0.935 0.02 285)" aria-labelledby="work-title">
+      <div class="shell">
+        <p class="section-label">Ipsum / Selected work</p>
+        <h2 id="work-title">Sed ut perspiciatis unde omnis.</h2>
+        <p class="section-intro">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+
+        <div class="project-list">
+          <article class="project">
+            <div class="project__heading">
+                              <h3>Lorem Ipsum Project</h3>
+              <span class="project__year">2026</span>
+            </div>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.</p>
+            <ul class="tag-list" aria-label="Dummy project categories">
+              <li>LOREM</li><li>IPSUM</li><li>DOLOR</li>
+            </ul>
+          </article>
+          <article class="project">
+            <div class="project__heading">
+              <h3>Dolor Sit Amet</h3>
+              <span class="project__year">2025</span>
+            </div>
+            <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+            <ul class="tag-list" aria-label="Dummy project categories">
+              <li>SIT</li><li>AMET</li>
+            </ul>
+          </article>
+          <article class="project">
+            <div class="project__heading">
+              <h3>Consectetur Adipiscing</h3>
+              <span class="project__year">2024</span>
+            </div>
+            <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.</p>
+            <ul class="tag-list" aria-label="Dummy project categories">
+              <li>ELIT</li><li>SED</li><li>DO</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="notes" data-tone="oklch(0.94 0.03 160)" aria-labelledby="notes-title">
+      <div class="shell">
+        <p class="section-label">Dolor / Dummy notes</p>
+        <h2 id="notes-title">Ut enim ad minima veniam.</h2>
+        <p class="section-intro">Quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
+
+        <div class="notes-list">
+          <article class="note">
+            <time datetime="2026-01-16">16.01.26</time>
+            <div>
+              <h3>Lorem ipsum dolor sit amet</h3>
+              <span class="note__tag">LOREM</span>
+            </div>
+          </article>
+          <article class="note">
+            <time datetime="2025-11-08">08.11.25</time>
+            <div>
+              <h3>Consectetur adipiscing elit sed do</h3>
+              <span class="note__tag">IPSUM</span>
+            </div>
+          </article>
+          <article class="note">
+            <time datetime="2025-06-21">21.06.25</time>
+            <div>
+              <h3>Eiusmod tempor incididunt ut labore</h3>
+              <span class="note__tag">DOLOR</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" data-tone="oklch(0.93 0.025 65)" aria-labelledby="contact-title">
+      <div class="shell">
+        <p class="section-label">Sit amet / Contact</p>
+        <h2 id="contact-title">Lorem ipsum dolor sit amet, <em>consectetur.</em></h2>
+        <p class="section-intro">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <div class="copy-row">
+          <code id="dummy-email">hello@example.com</code>
+          <button class="copy-button" type="button" data-copy="hello@example.com" aria-describedby="copy-status">Copy dummy email</button>
+        </div>
+        <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <p class="footer__label">LOREM IPSUM / DUMMY FOOTER</p>
+      <blockquote>“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</blockquote>
+      <div class="footer__bottom">
+        <p>© <span id="year">2026</span> John Doe. Dummy text only.</p>
+        <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
